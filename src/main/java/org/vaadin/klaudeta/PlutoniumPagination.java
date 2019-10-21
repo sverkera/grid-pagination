@@ -19,6 +19,7 @@ import com.vaadin.flow.templatemodel.TemplateModel;
 @Tag("plutonium-pagination")
 @HtmlImport("bower_components/plutonium-pagination/plutonium-pagination.html")
 public class PlutoniumPagination extends PolymerTemplate<PlutoniumPagination.Model> {
+	private static final long serialVersionUID = -6200668072860631457L;
 
 	public interface Model extends TemplateModel {
 
@@ -165,6 +166,8 @@ public class PlutoniumPagination extends PolymerTemplate<PlutoniumPagination.Mod
 	 */
 	@DomEvent("pageChange")
 	public static class PageChangeEvent extends ComponentEvent<PlutoniumPagination> {
+		private static final long serialVersionUID = -853919961697080996L;
+
 		private final int newPage;
 		private final int oldPage;
 
